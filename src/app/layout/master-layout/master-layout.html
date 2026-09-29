@@ -1,4 +1,7 @@
-<app-header></app-header>
+<app-header
+    [collapsed]="collapsed"
+    (toggle)="toggleSidebar()">
+</app-header>
 
 <div class="layout">
 
@@ -9,16 +12,6 @@
     <main
         class="content"
         [class.expanded]="collapsed">
-
-        <button
-            class="toggle-btn"
-            (click)="toggleSidebar()">
-
-            <span class="line saffron"></span>
-            <span class="line white"></span>
-            <span class="line green"></span>
-
-        </button>
 
         <router-outlet></router-outlet>
 

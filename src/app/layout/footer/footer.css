@@ -1,15 +1,11 @@
-footer{
-
-height:50px;
-
-background:#0091BA;
-
-color:white;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
+footer {
+  height: 44px;
+  background: #f4f6fa;
+  color: #8a92a6;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #edf2f7;
 }
+
