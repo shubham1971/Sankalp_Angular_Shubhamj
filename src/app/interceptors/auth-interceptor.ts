@@ -11,8 +11,8 @@ export const authInterceptor: HttpInterceptorFn = (req, next) => {
 
     req = req.clone({
       setHeaders: {
-        //AuthToken: token
-        Authorization: `Bearer ${token}`
+        // Backend ClientTokenMiddleware reads this header
+        'X-Client-Token': token
       }
     });
 

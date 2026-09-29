@@ -82,8 +82,8 @@ generateCaptcha() {
       this.loginService.login(request).subscribe({
         next: (response) => {debugger
           if (response.status) {
-            // Save Auth Token
-            localStorage.setItem("token", response.authToken || '');
+            // Save Auth Token (backend returns it as clientToken)
+            localStorage.setItem("token", response.clientToken || '');
 
             // Decrypt Response Data
             if (response.data) {
