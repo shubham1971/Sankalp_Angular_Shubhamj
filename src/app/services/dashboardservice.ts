@@ -12,7 +12,7 @@ export class DashboardService {
   private http = inject(HttpClient);
   private cryptoService = inject(CryptoService);
 
-  private apiUrl ='https://localhost:7279/api/Dashboard/Summary';
+  private apiUrl = '/api/Dashboard/Summary';
 
   getSummary(): Observable<any> {
 

@@ -188,7 +188,7 @@ export class GalleryAdmin implements OnInit {
     }
 
 
-    return `https://localhost:7279/${path}`;
+    return `/${path}`;
 
   }
 

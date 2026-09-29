@@ -9,7 +9,7 @@ export class BlockService {
 
   private http = inject(HttpClient);
   private cryptoService = inject(CryptoService);
-  private apiUrl = 'https://localhost:7279/api/Master/GetBlockList';
+  private apiUrl = '/api/Master/GetBlockList';
 
   getBlockList(distCode: string) {
 

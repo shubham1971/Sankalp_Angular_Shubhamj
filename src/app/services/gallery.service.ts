@@ -10,7 +10,7 @@ export class GalleryService {
   private http = inject(HttpClient);
 
   private apiUrl =
-    'https://localhost:7279/api/Gallery';
+    '/api/Gallery';
 
 
   // ============================================

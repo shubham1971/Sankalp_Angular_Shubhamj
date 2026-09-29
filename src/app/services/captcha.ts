@@ -14,7 +14,7 @@ export class CaptchaService {
 
   private http = inject(HttpClient);
 
-  private apiUrl = 'http://10.133.20.147:81/api/Captcha';
+  private apiUrl = '/api/Captcha';
 
   getCaptcha(): Observable<CaptchaResponse> {
 

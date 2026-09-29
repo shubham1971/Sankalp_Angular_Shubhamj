@@ -130,7 +130,7 @@ export class Gallery implements OnInit {
     }
 
 
-    return `https://localhost:7279/${path}`;
+    return `/${path}`;
 
   }
 

@@ -42,7 +42,7 @@ generateCaptcha() {
     rememberMe: new FormControl(false)
   });
 
-  login() {
+  login() {debugger
     if (this.loginForm.invalid) {
       this.loginForm.markAllAsTouched();
       return;
@@ -80,7 +80,7 @@ generateCaptcha() {
 
       // 5. Call API
       this.loginService.login(request).subscribe({
-        next: (response) => {
+        next: (response) => {debugger
           if (response.status) {
             // Save Auth Token
             localStorage.setItem("token", response.authToken || '');

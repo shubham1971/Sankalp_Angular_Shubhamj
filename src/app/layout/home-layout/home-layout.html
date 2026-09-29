@@ -29,10 +29,15 @@
 
       </div>
 
-      <button class="login-btn" type="button">
-        <span class="login-icon">↪</span>
-        Official Login
-      </button>
+      <div class="auth-buttons">
+        <button class="login-btn" type="button" routerLink="/login">
+          <span class="login-icon">↪</span>
+          Official Login
+        </button>
+        <button class="register-btn" type="button" (click)="openOtpLogin()">
+          Register
+        </button>
+      </div>
 
     </div>
 
@@ -187,6 +192,13 @@
 
       </button>
 
+      <button
+        class="nav-register" type="button" (click)="openOtpLogin()">
+
+        Register
+
+      </button>
+
     </div>
 
   </nav>
@@ -235,5 +247,19 @@
 
   </footer>
 
+  <!-- ============ OTP REGISTER MODAL ============ -->
+  <app-otp-login-modal
+    [isOpen]="isLoginModalOpen"
+    (close)="closeOtpLogin()"
+    (verified)="onOtpVerified($event)">
+  </app-otp-login-modal>
+
+  <!-- ============ USER REGISTRATION MODAL ============ -->
+  <app-user-register-modal
+    [isOpen]="isRegisterModalOpen"
+    [mobileNo]="registerContext.mobileNo"
+    [deviceId]="registerContext.deviceId"
+    (close)="closeRegisterModal()">
+  </app-user-register-modal>
 
 </div>

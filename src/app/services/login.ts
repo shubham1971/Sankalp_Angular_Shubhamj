@@ -12,8 +12,7 @@ export class Login {
 
   private http = inject(HttpClient);
 
-  //private apiUrl = 'http://10.133.20.147:81/api/Users/Login';
-  private apiUrl = 'https://localhost:7279/api/Auth/Login';
+  private apiUrl = '/api/Auth/Login';
 
   login(request: LoginRequest): Observable<LoginResponse> {
 

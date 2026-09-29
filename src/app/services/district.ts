@@ -11,7 +11,7 @@ export class DistrictService {
   private http = inject(HttpClient);
    private cryptoService = inject(CryptoService);
 
-  apiUrl = 'https://localhost:7279/api/Master/GetDistrict';
+  apiUrl = '/api/Master/GetDistrict';
 
   getDistrictList(): Observable<any> {
 
