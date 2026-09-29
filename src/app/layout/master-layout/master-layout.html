@@ -1,0 +1,29 @@
+<app-header></app-header>
+
+<div class="layout">
+
+    <app-sidebar
+        [collapsed]="collapsed">
+    </app-sidebar>
+
+    <main
+        class="content"
+        [class.expanded]="collapsed">
+
+        <button
+            class="toggle-btn"
+            (click)="toggleSidebar()">
+
+            <span class="line saffron"></span>
+            <span class="line white"></span>
+            <span class="line green"></span>
+
+        </button>
+
+        <router-outlet></router-outlet>
+
+    </main>
+
+</div>
+
+<app-footer></app-footer>
